@@ -1,34 +1,76 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Reboot Tech Community
 
-## Getting Started
+Tech is changing daily so reboot yourself too from time to time 🤩
 
-First, run the development server:
 
-```bash
-npm run dev
-# or
-yarn dev
+## Contribution Guidelines🏗
+
+Are we missing any of your favorite features, which you think you can add to it❓ We invite you to contribute to this project and make it better. 
+To start contributing, follow the below guidelines: 
+
+**1.**  Fork [this](https://github.com/Vishal-raj-1/reboot-tech-community) repository.
+
+**2.**  Clone your forked copy of the project.
+
+```
+git clone https://github.com/<your_user_name>/reboot-tech-community.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**3.** Navigate to the project directory :file_folder: .
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+cd reboot-tech-community
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+**4.** Add a reference(remote) to the original repository.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+git remote add upstream https://github.com/vishal-raj-1/reboot-tech-community.git 
+```
 
-## Learn More
+**5.** Check the remotes for this repository.
 
-To learn more about Next.js, take a look at the following resources:
+```
+git remote -v
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**6.** Always take a pull from the upstream repository to your main branch to keep it at par with the main project(updated repository).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```
+git pull upstream main
+```
 
-## Deploy on Vercel
+**7.** Create a new branch.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+git checkout -b <your_branch_name>
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+**8.** Perfom your desired changes to the code base.
+
+**9.** Track your changes:heavy_check_mark: .
+
+```
+git add . 
+```
+
+**10.** Commit your changes .
+
+```
+git commit -m "Relevant message"
+```
+
+**11.** Push the committed changes in your feature branch to your remote repo.
+
+```
+git push -u origin <your_branch_name>
+```
+
+**12.** To create a pull request, click on `compare and pull requests`.
+
+**13.** Add appropriate title and description to your pull request explaining your changes and efforts done.
+
+**14.** Click on `Create Pull Request`.
+
+
+**15** Voila :exclamation: You have made a PR to the reboot-tech-community :boom: . Wait for your submission to be accepted and your PR to be merged.
