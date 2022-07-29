@@ -4,22 +4,20 @@ const Hero = () => {
     return (
         <Box
             sx={{
-                bgcolor: 'background.paper',
                 pt: 8,
                 pb: 6,
             }}
         >
-            <Container maxWidth="sm">
+            <Container maxWidth="md">
                 <Typography
                     component="h1"
                     variant="h2"
                     align="center"
-                    color="text.primary"
                     gutterBottom
                 >
                     Reboot Tech Community
                 </Typography>
-                <Typography variant="h5" align="center" color="text.secondary" paragraph>
+                <Typography variant="h5" align="center" paragraph>
                 Tech is changing daily so reboot yourself too from time to time
                 </Typography>
                 <Stack
@@ -28,11 +26,11 @@ const Hero = () => {
                     spacing={2}
                     justifyContent="center"
                 >
-                    <Button variant="contained">
+                    <Button variant="contained" className='gradientButton'>
                         <a href="#courses">Reboot Now</a>
                     </Button>
                     {/* discord community link */}
-                    <Button variant="outlined">Join Community</Button>
+                    <Button variant="contained" className='gradientButton'>Join Community</Button>
                 </Stack>
             </Container>
         </Box>

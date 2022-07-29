@@ -30,15 +30,12 @@ const Socials = () => {
                 socials.map(social => (
                     <a href={social.link} target='_blank'
                         style={{
-                            border: '1px solid white',
                             padding: '5px',
                             borderRadius: '50%',
                             display: 'inline-block',
                             width: '50px',
                             height: '50px',
                             margin: '5px',
-                            background: 'black',
-                            color: 'white',
                         }}
                     >
                         {social.icon}

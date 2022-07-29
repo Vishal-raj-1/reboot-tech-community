@@ -31,7 +31,7 @@ const Footer = () => {
         },
     ]
     return (
-        <Box sx={{ bgcolor: '#1e1e1e', color: 'white', p: 6 }} component="footer">
+        <Box sx={{ p: 6 }} component="footer">
             <Grid container justifyContent='center'>
                 <Grid item md={4} my={2}>
                     <Typography variant="h6" align="center" gutterBottom>
@@ -60,7 +60,7 @@ const Footer = () => {
                 </Grid>
             </Grid>
 
-            <Typography variant="body2" color="#fff" align="center">
+            <Typography variant="body2" mt={3} color="#fff" align="center">
                 {'Copyright © '}
                 <Link color="#fff" href="#">
                     Reboot Tech

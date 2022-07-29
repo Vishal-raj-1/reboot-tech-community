@@ -35,7 +35,7 @@ export default function SimpleAccordion() {
             </Typography>
             {
                 faqs.map(faq => (
-                    <Accordion key={faq.question}>
+                    <Accordion key={faq.question} className='glass subHeading'>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon />}
                             aria-controls="panel1a-content"

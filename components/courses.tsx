@@ -53,7 +53,7 @@ function Courses() {
                 {courses.map((course) => (
                     <Grid item key={course.id} xs={12} sm={6} lg={4}>
                         <Card
-                            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
+                            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }} className='glass'
                         >
                             <CardMedia
                                 component="img"
@@ -65,17 +65,17 @@ function Courses() {
                                 <Typography gutterBottom variant="h5" component="h2">
                                     {course.title}
                                 </Typography>
-                                <Typography>
+                                <Typography color='#4d4850'>
                                     {course.description}
                                 </Typography>
                             </CardContent>
                             <CardActions>
                                 <a href={course.youtubeLink} target='_blank'>
-                                    <Chip icon={<YouTube />} label="YouTube" variant='outlined' color='error' sx={{ my: 'auto', cursor: 'pointer' }} />
+                                    <Chip icon={<YouTube />} label="YouTube" variant='filled' color='error' sx={{ my: 'auto', cursor: 'pointer' }} />
                                 </a>
                                 
                                 <a href={course.youtubeLink} target='_blank'>
-                                    <Chip icon={<Visibility />} label="View More" variant='outlined' sx={{ my: 'auto', cursor: 'pointer' }} />
+                                    <Chip icon={<Visibility />} label="View More" variant='filled' sx={{ my: 'auto', cursor: 'pointer' }} />
                                 </a>
                                 {/* <Button size="small">Edit</Button> */}
                             </CardActions>
