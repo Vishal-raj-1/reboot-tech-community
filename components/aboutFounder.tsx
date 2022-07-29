@@ -19,10 +19,10 @@ const AboutFounder = () => {
                             About Founder
                         </Typography>
                         <Typography mb={2} align='center'>
-                            Vishal Rajput is frontend developer from India. He have worked for 5 startups in last 2 years.
+                            Vishal Rajput is frontend developer from India. He has worked for 5 startups in last 2 years.
                         </Typography>
                         <Typography mb={3} align='center'>
-                            He have mentored 1000+ students regarding web development, data structure and algorithms, open source, interview preperation and lot more.
+                            He has mentored 1000+ students regarding web development, data structure and algorithms, open source, interview preperation and lot more.
                         </Typography>
                         <Socials />
                     </CardContent>
