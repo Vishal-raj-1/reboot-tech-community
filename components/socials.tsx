@@ -38,6 +38,7 @@ const Socials = () => {
                             height: '50px',
                             margin: '5px',
                             background: 'black',
+                            color: 'white',
                         }}
                     >
                         {social.icon}
