@@ -4,7 +4,7 @@ const Navbar = () => {
     return (
         <Toolbar>
             <TerminalIcon sx={{ mr: 2 }} />
-            <Typography variant="h6" noWrap>
+            <Typography variant="h6" noWrap fontWeight={'700'}>
                 Reboot Tech Community
             </Typography>
         </Toolbar>

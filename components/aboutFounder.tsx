@@ -17,7 +17,7 @@ const AboutFounder = () => {
                 <Grid item xs={12} md={6}>
                     <Card className='glass'>
                         <CardContent>
-                            <Typography mb={5} variant="h3" align='center' color='#fff'>
+                            <Typography mb={3} variant="h3" align='center' color='#fff' fontWeight={'700'}>
                                 About Founder
                             </Typography>
                             <Typography mb={2} align='center' className='subHeading'>

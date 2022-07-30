@@ -33,8 +33,8 @@ const Footer = () => {
     return (
         <Box sx={{ p: 6 }} component="footer">
             <Grid container justifyContent='center'>
-                <Grid item md={4} my={2}>
-                    <Typography variant="h6" align="center" gutterBottom>
+                <Grid item md={5} m={2}>
+                    <Typography variant="h5" align="center" gutterBottom fontWeight={'700'}>
                         Courses
                     </Typography>
                     {
@@ -42,18 +42,17 @@ const Footer = () => {
                             <Typography
                                 variant="subtitle1"
                                 align="center"
-                                color="text.secondary"
                                 component="p"
                             >
-                                <Link color='#fff' href={course.youtubeLink}>
+                                <a href={course.youtubeLink}>
                                     {course.title}
-                                </Link>
+                                </a>
                             </Typography>
                         ))
                     }
                 </Grid>
-                <Grid item md={4} my={2}>
-                    <Typography variant="h6" align="center" gutterBottom>
+                <Grid item md={5} m={2}>
+                    <Typography variant="h5" align="center" gutterBottom fontWeight={'700'}>
                         Socials
                     </Typography>
                     <Socials />

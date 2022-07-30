@@ -4,8 +4,8 @@ const Hero = () => {
     return (
         <Box
             sx={{
-                pt: 8,
-                pb: 6,
+                pt: 3,
+                pb: 2,
             }}
         >
             <Container maxWidth="md">
@@ -14,6 +14,7 @@ const Hero = () => {
                     variant="h2"
                     align="center"
                     gutterBottom
+                    fontWeight={'700'}
                 >
                     Reboot Tech Community
                 </Typography>

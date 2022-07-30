@@ -1,5 +1,5 @@
 import { Grid, Card, CardContent, CardMedia, CardActionArea, Typography, Container } from '@mui/material';
-import { School, People, NoteAlt, Construction, OndemandVideo, Quiz } from '@mui/icons-material';
+import { School, People, NoteAlt, Construction, VideoLibrary, Assignment } from '@mui/icons-material';
 
 function Features() {
     let features = [
@@ -11,13 +11,13 @@ function Features() {
         },
         {
             id: 1,
-            icon: <OndemandVideo sx={{ fontSize: '64px' }} />,
+            icon: <VideoLibrary sx={{ fontSize: '64px' }} />,
             title: 'Curated Videos',
             description: 'Learn through in-depth tutorials, how to approach an algorithm, how to implement it & how to optimise it.'
         },
         {
             id: 2,
-            icon: <Quiz sx={{ fontSize: '64px' }} />,
+            icon: <Assignment sx={{ fontSize: '64px' }} />,
             title: 'Assignments',
             description: 'Assignments and questions are provided to understand the concepts well.'
         },
@@ -42,7 +42,7 @@ function Features() {
     ]
     return (
         <Container sx={{ py: 8 }} maxWidth="lg">
-            <Typography gutterBottom variant="h3" align='center'>
+            <Typography mb={5} variant="h3" align='center' fontWeight={'700'}>
                 Features
             </Typography>
             <Grid container justifyContent="center" alignItems='center' spacing={3}>
@@ -53,17 +53,17 @@ function Features() {
                                 textAlign: 'center',
                                 maxWidth: 345,
                             }}
-                                className='glass subHeading'
+                                className='glass'
                                 key={feature.id}>
                                 <CardActionArea>
-                                    <Typography mt={2}>
+                                    <Typography mt={2} color='#fff'>
                                         {feature.icon}
                                     </Typography>
                                     <CardContent>
-                                        <Typography gutterBottom variant="h5" component="div">
+                                        <Typography gutterBottom variant="h5" color='#fff'>
                                             {feature.title}
                                         </Typography>
-                                        <Typography variant="body2">
+                                        <Typography className='subHeading'>
                                             {feature.description}
                                         </Typography>
                                     </CardContent>

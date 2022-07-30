@@ -3,14 +3,14 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Container, Chip, CardActions, Grid } from '@mui/material';
+import { Container, Chip, CardActions, Grid, Button } from '@mui/material';
 import { YouTube, Visibility } from '@mui/icons-material';
 function Courses() {
     let courses = [
         {
             id: 0,
             image: 'frontendDevelopment',
-            title: 'Frontend Development',
+            title: 'Frontend Development Essential Course',
             description: 'In Frontend Development Essential Course, we will learn HTML, CSS, CSS FlexBox, CSS Grid, JavaScript, Asynchronous Programming, Git & GitHub. We will also build 5+ projects to understand each and every topic. Finally, We will build our portfolio and also learn how to host our website on internet for FREE.',
             youtubeLink: 'https://www.youtube.com/watch?v=YCbCGuq_NWE&list=PLSH9gf0XETou_b8C3SJm8rk69Z41eUgbQ&index=1',
         },
@@ -45,7 +45,7 @@ function Courses() {
     ]
     return (
         <Container sx={{ py: 8 }} maxWidth="lg" id="courses">
-            <Typography mb={5} variant="h3" align='center'>
+            <Typography mb={5} variant="h3" align='center' fontWeight={'700'}>
                 Courses
             </Typography>
             {/* End hero unit */}
@@ -62,22 +62,23 @@ function Courses() {
                                 sx={{p:1}}
                             />
                             <CardContent sx={{ flexGrow: 1 }}>
-                                <Typography gutterBottom variant="h5" component="h2">
+                                <Typography gutterBottom variant="h5" color='#fff'>
                                     {course.title}
                                 </Typography>
-                                <Typography color='#4d4850'>
+                                <Typography className='subHeading'>
                                     {course.description}
                                 </Typography>
                             </CardContent>
-                            <CardActions>
-                                <a href={course.youtubeLink} target='_blank'>
-                                    <Chip icon={<YouTube />} label="YouTube" variant='filled' color='error' sx={{ my: 'auto', cursor: 'pointer' }} />
-                                </a>
-                                
-                                <a href={course.youtubeLink} target='_blank'>
-                                    <Chip icon={<Visibility />} label="View More" variant='filled' sx={{ my: 'auto', cursor: 'pointer' }} />
-                                </a>
-                                {/* <Button size="small">Edit</Button> */}
+                            <CardActions sx={{m: '5px auto'}}>
+                                    <a href={course.youtubeLink} target='_blank'>
+                                        <Button variant='contained' color='error'>
+                                            <YouTube sx={{mr: '10px'}}/> Checkout Playlist
+                                        </Button>
+                                    </a>
+                                    
+                                    {/* <a href={course.youtubeLink} target='_blank'>
+                                        <Chip icon={<Visibility />} label="View More" variant='filled' sx={{ my: 'auto', cursor: 'pointer'}} />
+                                    </a> */}
                             </CardActions>
                         </Card>
                     </Grid>

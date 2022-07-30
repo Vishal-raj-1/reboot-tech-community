@@ -30,14 +30,14 @@ export default function SimpleAccordion() {
     ]
     return (
         <Container sx={{ py: 8 }} maxWidth="lg">
-            <Typography mb={5} variant="h3" align='center'>
+            <Typography mb={5} variant="h3" align='center' fontWeight={'700'}>
                 FAQs
             </Typography>
             {
                 faqs.map(faq => (
                     <Accordion key={faq.question} className='glass subHeading'>
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
+                            expandIcon={<ExpandMoreIcon className='subHeading'/>}
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >

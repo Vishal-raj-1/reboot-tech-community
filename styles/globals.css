@@ -6,9 +6,9 @@
 
 body {
   color: white;
-  background-color: #4158D0;
-  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #000000 100%);
   font-family: 'Poppins', sans-serif;
+  background-color: #4158D0;
+  background-image: linear-gradient(43deg, #000000 0%, #050f26 46%, #000000 100%);
 }
 
 a {
@@ -21,11 +21,11 @@ a {
 }
 
 .gradientButton {
-  background-image: linear-gradient(113deg, #8e3989 0%, #4f204c 100%);
+  background-image: linear-gradient(63deg, #11197d 0%, #001f3d 100%);
 }
 
 .subHeading {
-  color: #fafafa;
+  color: #b6b6b6;
 }
 
 .founderImage {
