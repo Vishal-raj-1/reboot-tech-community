@@ -5,7 +5,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Container } from '@mui/material';
-import style from '../styles/home.module.css';
+import styles from '../styles/home.module.css';
 
 export default function SimpleAccordion() {
     let faqs = [
@@ -37,9 +37,9 @@ export default function SimpleAccordion() {
             </Typography>
             {
                 faqs.map(faq => (
-                    <Accordion key={faq.question} className={`${style.glass} ${style.subHeading}`}>
+                    <Accordion key={faq.question} className={`${styles.glass} ${styles.subHeading}`}>
                         <AccordionSummary
-                            expandIcon={<ExpandMoreIcon className={style.subHeading}/>}
+                            expandIcon={<ExpandMoreIcon className={styles.subHeading}/>}
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >

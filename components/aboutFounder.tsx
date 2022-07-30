@@ -1,7 +1,7 @@
 import { CardMedia, Grid, Typography, Container, CardContent, Card } from '@mui/material'
 import React from 'react'
 import Socials from './socials'
-import style from '../styles/home.module.css';
+import styles from '../styles/home.module.css';
 
 const AboutFounder = () => {
     return (
@@ -12,19 +12,19 @@ const AboutFounder = () => {
                         component="img"
                         image="/images/vishalRajput.png"
                         alt="Vishal Rajput"
-                        className={style.founderImage}
+                        className={styles.founderImage}
                     />
                 </Grid>
                 <Grid item xs={12} md={6}>
-                    <Card className={style.glass}>
+                    <Card className={styles.glass}>
                         <CardContent>
                             <Typography mb={3} variant="h3" align='center' color='#fff' fontWeight={'700'}>
                                 About Founder
                             </Typography>
-                            <Typography mb={2} align='center' className={style.subHeading}>
+                            <Typography mb={2} align='center' className={styles.subHeading}>
                                 Vishal Rajput is frontend developer from India. He have worked for 5 startups in last 2 years.
                             </Typography>
-                            <Typography mb={3} align='center' className={style.subHeading}>
+                            <Typography mb={3} align='center' className={styles.subHeading}>
                                 He have mentored 1000+ students regarding web development, data structure and algorithms, open source, interview preperation and lot more.
                             </Typography>
                             <Socials />

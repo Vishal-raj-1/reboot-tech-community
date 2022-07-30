@@ -1,5 +1,5 @@
 import { Box, Container, Typography, Stack, Button } from "@mui/material"
-import style from '../styles/home.module.css';
+import styles from '../styles/home.module.css';
 
 const Hero = () => {
     return (
@@ -28,11 +28,11 @@ const Hero = () => {
                     spacing={2}
                     justifyContent="center"
                 >
-                    <Button variant="contained" className={style.gradientButton}>
+                    <Button variant="contained" className={styles.gradientButton}>
                         <a href="#courses">Reboot Now</a>
                     </Button>
                     {/* discord community link */}
-                    <Button variant="contained" className={style.gradientButton}>Join Community</Button>
+                    <Button variant="contained" className={styles.gradientButton}>Join Community</Button>
                 </Stack>
             </Container>
         </Box>

@@ -10,6 +10,16 @@
   .subHeading {
     color: #b6b6b6;
   }
+
+  .social{
+    padding: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: #fff;
+}
   
   .founderImage {
     width: 400px;

@@ -5,7 +5,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { Container, Chip, CardActions, Grid, Button } from '@mui/material';
 import { YouTube, Visibility } from '@mui/icons-material';
-import style from '../styles/home.module.css';
+import styles from '../styles/home.module.css';
 
 function Courses() {
     let courses = [
@@ -55,7 +55,7 @@ function Courses() {
                 {courses.map((course) => (
                     <Grid item key={course.id} xs={12} sm={6} lg={4}>
                         <Card
-                            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }} className={style.glass}
+                            sx={{ height: '100%', display: 'flex', flexDirection: 'column' }} className={styles.glass}
                         >
                             <CardMedia
                                 component="img"
@@ -67,7 +67,7 @@ function Courses() {
                                 <Typography gutterBottom variant="h5" color='#fff'>
                                     {course.title}
                                 </Typography>
-                                <Typography className={style.subHeading}>
+                                <Typography className={styles.subHeading}>
                                     {course.description}
                                 </Typography>
                             </CardContent>

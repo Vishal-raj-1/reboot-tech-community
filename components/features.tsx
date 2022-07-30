@@ -1,6 +1,6 @@
 import { Grid, Card, CardContent, CardMedia, CardActionArea, Typography, Container } from '@mui/material';
 import { School, People, NoteAlt, Construction, VideoLibrary, Assignment } from '@mui/icons-material';
-import style from '../styles/home.module.css';
+import styles from '../styles/home.module.css';
 
 function Features() {
     let features = [
@@ -49,12 +49,12 @@ function Features() {
             <Grid container justifyContent="center" alignItems='center' spacing={3}>
                 {
                     features.map(feature => (
-                        <Grid item alignSelf="center" sm={6} md={4} textAlign='center'>
+                        <Grid item alignSelf="center" sm={6} md={4} textAlign='center' key={feature.id}>
                             <Card sx={{
                                 textAlign: 'center',
                                 maxWidth: 345,
                             }}
-                                className={style.glass}
+                                className={styles.glass}
                                 key={feature.id}>
                                 <CardActionArea>
                                     <Typography mt={2} color='#fff'>
@@ -64,7 +64,7 @@ function Features() {
                                         <Typography gutterBottom variant="h5" color='#fff'>
                                             {feature.title}
                                         </Typography>
-                                        <Typography className={style.subHeading}>
+                                        <Typography className={styles.subHeading}>
                                             {feature.description}
                                         </Typography>
                                     </CardContent>

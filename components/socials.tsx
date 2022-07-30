@@ -1,6 +1,6 @@
 import { Twitter, LinkedIn, Instagram, GitHub, YouTube } from "@mui/icons-material"
 import { Typography } from "@mui/material";
-
+import styles from '../styles/home.module.css'
 const Socials = () => {
     let socials = [
         {
@@ -29,15 +29,8 @@ const Socials = () => {
             {
                 socials.map(social => (
                     <a href={social.link} target='_blank'
-                        style={{
-                            padding: '5px',
-                            borderRadius: '50%',
-                            display: 'inline-block',
-                            width: '50px',
-                            height: '50px',
-                            margin: '5px',
-                            color: '#fff'
-                        }}
+                        className={styles.social}
+                        key={social.link}
                     >
                         {social.icon}
                     </a>

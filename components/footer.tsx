@@ -43,6 +43,7 @@ const Footer = () => {
                                 variant="subtitle1"
                                 align="center"
                                 component="p"
+                                key={course.title}
                             >
                                 <a href={course.youtubeLink}>
                                     {course.title}
