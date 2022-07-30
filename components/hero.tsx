@@ -33,7 +33,9 @@ const Hero = () => {
                         <a href="#courses">Reboot Now</a>
                     </Button>
                     {/* discord community link */}
-                    <Button variant="contained" className={styles.gradientButton}>Join Community</Button>
+                    <Button variant="contained" className={styles.gradientButton}>
+                        <a href="https://discord.gg/WB7FVmXY">Join Community</a>
+                    </Button>
                 </Stack>
             </Container>
         </Box>
