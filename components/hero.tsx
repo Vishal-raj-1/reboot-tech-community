@@ -16,10 +16,11 @@ const Hero = () => {
                     align="center"
                     gutterBottom
                     fontWeight={'700'}
+                    color="#fff"
                 >
                     Reboot Tech Community
                 </Typography>
-                <Typography variant="h5" align="center" paragraph>
+                <Typography variant="h5" align="center" paragraph color="#fff">
                 Tech is changing daily so reboot yourself too from time to time
                 </Typography>
                 <Stack

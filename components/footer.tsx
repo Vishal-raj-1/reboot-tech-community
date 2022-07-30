@@ -44,6 +44,7 @@ const Footer = () => {
                                 align="center"
                                 component="p"
                                 key={course.title}
+                                color="#fff"
                             >
                                 <a href={course.youtubeLink}>
                                     {course.title}

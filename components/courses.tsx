@@ -47,7 +47,7 @@ function Courses() {
     ]
     return (
         <Container sx={{ py: 8 }} maxWidth="lg" id="courses">
-            <Typography mb={5} variant="h3" align='center' fontWeight={'700'}>
+            <Typography mb={5} variant="h3" align='center' color="#fff" fontWeight={'700'}>
                 Courses
             </Typography>
             {/* End hero unit */}

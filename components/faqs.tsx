@@ -32,21 +32,21 @@ export default function SimpleAccordion() {
     ]
     return (
         <Container sx={{ py: 8 }} maxWidth="lg">
-            <Typography mb={5} variant="h3" align='center' fontWeight={'700'}>
+            <Typography mb={5} variant="h3" align='center' color="#fff" fontWeight={'700'}>
                 FAQs
             </Typography>
             {
                 faqs.map(faq => (
-                    <Accordion key={faq.question} className={`${styles.glass} ${styles.subHeading}`}>
+                    <Accordion key={faq.question} className={styles.glass}>
                         <AccordionSummary
                             expandIcon={<ExpandMoreIcon className={styles.subHeading}/>}
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography>{faq.question}</Typography>
+                            <Typography className={styles.subHeading}>{faq.question}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                            <Typography>
+                            <Typography className={styles.subHeading}>
                                 {faq.answer}
                             </Typography>
                         </AccordionDetails>

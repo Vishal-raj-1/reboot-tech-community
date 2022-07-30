@@ -43,7 +43,7 @@ function Features() {
     ]
     return (
         <Container sx={{ py: 8 }} maxWidth="lg">
-            <Typography mb={5} variant="h3" align='center' fontWeight={'700'}>
+            <Typography mb={5} variant="h3" align='center' color="#fff" fontWeight={'700'}>
                 Features
             </Typography>
             <Grid container justifyContent="center" alignItems='center' spacing={3}>
