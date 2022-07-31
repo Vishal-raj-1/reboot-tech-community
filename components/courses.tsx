@@ -79,13 +79,13 @@ function Courses() {
                             <CardActions sx={{m: '5px auto'}}>
                                     <a href={course.youtubeLink} target='_blank'>
                                         <Button variant='contained' color='error'>
-                                            <YouTube sx={{mr: '5px'}}/> Live Course
+                                            <YouTube sx={{mr: '5px'}}/> Course
                                         </Button>
                                     </a>
                                     
                                     <a href={course.notesLink} target='_blank'>
                                         <Button variant='contained' color='primary'>
-                                            <NoteAlt sx={{mr: '5px'}}/> Source Code
+                                            <NoteAlt sx={{mr: '5px'}}/> Notes
                                         </Button>
                                     </a>
                             </CardActions>
